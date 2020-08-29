@@ -50,6 +50,9 @@ yarn install
 echo "Run yarn build"
 yarn run build
 
+echo "List directory again"
+ls -ll
+
 echo "Copying to website folder"
 aws s3 sync ./build s3://${AWS_S3_BUCKET} --exact-timestamps --delete --region ${AWS_DEFAULT_REGION} $*
 
