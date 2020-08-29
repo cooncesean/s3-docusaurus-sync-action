@@ -38,6 +38,8 @@ aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 
 
 echo "Change directory to Source"
+echo "List directory first"
+ls -ll
 cd handbook-test
 
 echo "Install yarn"
